@@ -1,5 +1,10 @@
 # SS14.Launcher
 
+> [!WARNING]
+> This is a **fork** of [SS14.Launcher](https://github.com/space-wizards/SS14.Launcher).
+> It contains our own unofficial patches and modifications that may be unstable or opinionated.
+> For the original, stable version please visit the link above.
+
 <a href="https://weblate.spacestation14.com/engage/space-station-14-launcher/">
 <img src="https://weblate.spacestation14.com/widget/space-station-14-launcher/main/svg-badge.svg" alt="Translation status" />
 </a>
