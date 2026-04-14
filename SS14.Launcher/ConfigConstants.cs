@@ -26,12 +26,12 @@ public static class ConfigConstants
     // Amount of time to wait to let a redialling client properly die
     public const int LauncherCommandsRedialWaitTimeout = 1000;
 
-    private static readonly UrlFallbackSetStats StatsHubInfra = new(2);
+    private static readonly UrlFallbackSetStats StatsHubInfra = new(1);
 
-    public static readonly UrlFallbackSet AuthUrl = new(["https://auth.spacestation14.com/", "https://auth.fallback.spacestation14.com/"], StatsHubInfra);
-    public static readonly UrlFallbackSet[] DefaultHubUrls = [new(["https://hub.spacestation14.com/", "https://hub.fallback.spacestation14.com/"], StatsHubInfra)];
+    public static readonly UrlFallbackSet AuthUrl = new(["https://hub.auth.corvaxforge.ru/"], StatsHubInfra);
+    public static readonly UrlFallbackSet[] DefaultHubUrls = [new(["https://hub.corvaxforge.ru/"], StatsHubInfra)];
     public const string DiscordUrl = "https://discord.ss14.io/";
-    public const string AccountBaseUrl = "https://account.spacestation14.com/Identity/Account/";
+    public const string AccountBaseUrl = "https://web.corvaxforge.ru/Identity/Account/";
     public const string AccountManagementUrl = $"{AccountBaseUrl}Manage";
     public const string AccountRegisterUrl = $"{AccountBaseUrl}Register";
     public const string AccountResendConfirmationUrl = $"{AccountBaseUrl}ResendEmailConfirmation";
@@ -41,6 +41,7 @@ public static class ConfigConstants
     public const string TranslateUrl = "https://docs.spacestation14.com/en/general-development/contributing-translations.html";
 
     private static readonly UrlFallbackSet RobustBuildsBaseUrl = new([
+        "https://cdn.station14.ru/robust-builds/",
         "https://robust-builds.cdn.spacestation14.com/",
         "https://robust-builds.fallback.cdn.spacestation14.com/"
     ]);
